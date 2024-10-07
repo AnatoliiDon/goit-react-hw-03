@@ -36,7 +36,12 @@ const ContactForm = ({ addProfile }) => {
       <Form className={css.formField}>
         <label className={css.inputField}>
           <span className={css.inputTitle}>name</span>
-          <Field type="text" name="name" placeholder="Vasil Hmara" />
+          <Field
+            className={css.inputArea}
+            type="text"
+            name="name"
+            placeholder="Vasil Hmara"
+          />
           <ErrorMessage
             className={css.errorMessage}
             name="name"
@@ -46,7 +51,12 @@ const ContactForm = ({ addProfile }) => {
 
         <label className={css.inputField}>
           <span className={css.inputTitle}>number</span>
-          <Field type="text" name="number" placeholder="xxx-xx-xx" />
+          <Field
+            className={css.inputArea}
+            type="text"
+            name="number"
+            placeholder="xxx-xx-xx"
+          />
           <ErrorMessage
             className={css.errorMessage}
             name="number"
