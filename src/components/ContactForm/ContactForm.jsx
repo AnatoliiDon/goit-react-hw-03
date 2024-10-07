@@ -24,7 +24,8 @@ const addProfileSchema = yup.object({
 });
 
 const ContactForm = ({ addProfile }) => {
-  const handleSubmit = values => {
+  const handleSubmit = (values, actions) => {
+    actions.resetForm();
     addProfile(values);
   };
   return (
